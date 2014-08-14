@@ -1,0 +1,130 @@
+Main
+../../../webviewer/26.jpg
+dgm53eba3b901bf.htm
+
+
+
+(
+)
+设置A类用户
+../../../webviewer/42.jpg
+uc53eba47d0257.htm
+
+
+
+(
+the客户管理员 ( 客户管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba4910311.htm
+
+
+
+the设置A类用户的板块关联 ( 设置A类用户的板块关联 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba8b00373.htm
+
+
+
+)
+(
+)
+设置A类用户的板块关联
+../../../webviewer/42.jpg
+uc53eba8ad0178.htm
+
+
+
+(
+the设置A类用户 ( 设置A类用户 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba8b00371.htm
+
+
+
+)
+(
+)
+设置板块
+../../../webviewer/42.jpg
+uc53eba3be0160.htm
+
+
+
+(
+the客户管理员 ( 客户管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba47a03e4.htm
+
+
+
+)
+(
+)
+Associations
+../../../webviewer/assoccat.gif
+
+
+
+
+(
+Association (the设置板块:设置板块) (the客户管理员:客户管理员)
+../../../webviewer/81.jpg
+../../../looseends/ass53eba47a0213.htm
+
+
+
+(
+设置板块 ( the设置板块 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba47a03e4.htm
+
+
+
+客户管理员 ( the客户管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba47a03e6.htm
+
+
+
+)
+Association (the设置A类用户:设置A类用户) (the客户管理员:客户管理员)
+../../../webviewer/81.jpg
+../../../looseends/ass53eba4910098.htm
+
+
+
+(
+设置A类用户 ( the设置A类用户 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba4910311.htm
+
+
+
+客户管理员 ( the客户管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba4910313.htm
+
+
+
+)
+<<extend>> (the设置A类用户的板块关联:设置A类用户的板块关联) (the设置A类用户:设置A类用户)
+../../../webviewer/81.jpg
+../../../looseends/ass53eba8b001bc.htm
+
+
+
+(
+设置A类用户的板块关联 ( the设置A类用户的板块关联 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba8b00371.htm
+
+
+
+设置A类用户 ( the设置A类用户 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba8b00373.htm
+
+
+
+)
+)

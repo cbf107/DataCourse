@@ -1,0 +1,124 @@
+Main
+../../../webviewer/26.jpg
+dgm53eb9dfa0214.htm
+
+
+
+(
+)
+设置客户管理员
+../../../webviewer/42.jpg
+uc53eba05b031c.htm
+
+
+
+(
+the平台管理员 ( 平台管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba09f025c.htm
+
+
+
+)
+(
+)
+设置平台Portal面板
+../../../webviewer/42.jpg
+uc53eba0e00391.htm
+
+
+
+(
+the平台管理员 ( 平台管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba0e400f2.htm
+
+
+
+)
+(
+)
+添加管理注册客户
+../../../webviewer/42.jpg
+uc53eb9e0003d6.htm
+
+
+
+(
+the平台管理员 ( 平台管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eb9f3f0145.htm
+
+
+
+)
+(
+)
+Associations
+../../../webviewer/assoccat.gif
+
+
+
+
+(
+Association (the添加管理注册客户:添加管理注册客户) (the平台管理员:平台管理员)
+../../../webviewer/81.jpg
+../../../looseends/ass53eb9f3e0353.htm
+
+
+
+(
+添加管理注册客户 ( the添加管理注册客户 )
+../../../webviewer/82.jpg
+../../../looseends/role53eb9f3f0145.htm
+
+
+
+平台管理员 ( the平台管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eb9f3f0147.htm
+
+
+
+)
+Association (the设置客户管理员:设置客户管理员) (the平台管理员:平台管理员)
+../../../webviewer/81.jpg
+../../../looseends/ass53eba09f000a.htm
+
+
+
+(
+设置客户管理员 ( the设置客户管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba09f025c.htm
+
+
+
+平台管理员 ( the平台管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba09f025e.htm
+
+
+
+)
+Association (the设置平台Portal面板:设置平台Portal面板) (the平台管理员:平台管理员)
+../../../webviewer/81.jpg
+../../../looseends/ass53eba0e301d8.htm
+
+
+
+(
+设置平台Portal面板 ( the设置平台Portal面板 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba0e400f2.htm
+
+
+
+平台管理员 ( the平台管理员 )
+../../../webviewer/82.jpg
+../../../looseends/role53eba0e400f4.htm
+
+
+
+)
+)

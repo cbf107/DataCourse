@@ -1,0 +1,146 @@
+A 类用户操作
+../../webviewer/16.jpg
+cat53ecd4f60144/cat53ecd4f60144.htm
+
+cat53ecd4f60144/contents.cnt
+cat53ecd4f60144/
+客户管理员操作
+../../webviewer/16.jpg
+cat53eba3600110/cat53eba3600110.htm
+
+cat53eba3600110/contents.cnt
+cat53eba3600110/
+平台管理员操作
+../../webviewer/16.jpg
+cat53eb9de5020a/cat53eb9de5020a.htm
+
+cat53eb9de5020a/contents.cnt
+cat53eb9de5020a/
+Main
+../../webviewer/26.jpg
+dgm53eb9dcf03b9.htm
+
+
+
+(
+)
+<<Business Actor>> A类用户
+../../webviewer/124.jpg
+class53eba9f7039f.htm
+
+
+
+(
+the配置板块权限管理 ( 配置板块权限管理 )
+../../webviewer/82.jpg
+../../looseends/role53ebaa9100d7.htm
+
+
+
+the创建目录 ( 创建目录 )
+../../webviewer/82.jpg
+../../looseends/role53ecd54b00a8.htm
+
+
+
+the创建话题 ( 创建话题 )
+../../webviewer/82.jpg
+../../looseends/role53ecd56300a5.htm
+
+
+
+the扩展话题 ( 扩展话题 )
+../../webviewer/82.jpg
+../../looseends/role53ecd8380295.htm
+
+
+
+the将目录邀请码发送给B类用户 ( 将目录邀请码发送给B类用户 )
+../../webviewer/82.jpg
+../../looseends/role53ece12802c6.htm
+
+
+
+)
+<<Business Actor>> B类用户
+../../webviewer/124.jpg
+class53ece13702c9.htm
+
+
+
+(
+the配置目录权限管理 ( 配置目录权限管理 )
+../../webviewer/82.jpg
+../../looseends/role53ece1960333.htm
+
+
+
+)
+<<Business Actor>> 客户管理员
+../../webviewer/124.jpg
+class53eba2f40209.htm
+
+
+
+(
+the设置板块 ( 设置板块 )
+../../webviewer/82.jpg
+../../looseends/role53eba47a03e6.htm
+
+
+
+the设置A类用户 ( 设置A类用户 )
+../../webviewer/82.jpg
+../../looseends/role53eba4910313.htm
+
+
+
+the将板块邀请码发送给A类用户 ( 将板块邀请码发送给A类用户 )
+../../webviewer/82.jpg
+../../looseends/role53eba9df0253.htm
+
+
+
+)
+<<Business Actor>> 平台管理员
+../../webviewer/124.jpg
+class53eb9dd2006f.htm
+
+
+
+(
+the添加管理注册客户 ( 添加管理注册客户 )
+../../webviewer/82.jpg
+../../looseends/role53eb9f3f0147.htm
+
+
+
+the设置客户管理员 ( 设置客户管理员 )
+../../webviewer/82.jpg
+../../looseends/role53eba09f025e.htm
+
+
+
+the设置平台Portal面板 ( 设置平台Portal面板 )
+../../webviewer/82.jpg
+../../looseends/role53eba0e400f4.htm
+
+
+
+)
+<<Actor>> 平台应用客户
+../../webviewer/41.jpg
+class53ebaa310353.htm
+
+
+
+(
+)
+Associations
+../../webviewer/assoccat.gif
+
+
+
+
+(
+)
