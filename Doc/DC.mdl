@@ -4648,8 +4648,190 @@
 			    (object Class_Category "基础操作面板"
 				quid       	"53ECF9C203C7"
 				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list))
+				logical_models 	(list unit_reference_list
+				    (object Class "Themes.aspx"
+					quid       	"541E869E0224"
+					stereotype 	"boundary"
+					statemachine 	(object State_Machine "State/Activity Model"
+					    quid       	"541E872800D7"
+					    states     	(list States
+						(object State "$UNNAMED$51"
+						    quid       	"541E873A0250"
+						    type       	"StartState")
+						(object State "查找用户所属会员组"
+						    quid       	"541E873D0219"
+						    type       	"Normal")
+						(object State "加载会员顶层面版"
+						    quid       	"541E877A00D5"
+						    type       	"Normal"))
+					    partitions 	(list Partitions)
+					    objects    	(list Objects)
+					    transitions 	(list transition_list
+						(object State_Transition
+						    quid       	"541E8762018F"
+						    supplier   	"Logical View::Platform::Web Application::基础操作面板::Themes.aspx::State/Activity Model::查找用户所属会员组"
+						    supplier_quidu 	"541E873D0219"
+						    client     	"$UNNAMED$51"
+						    client_quidu 	"541E873A0250"
+						    sendEvent  	(object sendEvent
+							quid       	"541E87620192"))
+						(object State_Transition
+						    quid       	"541E879F00F0"
+						    supplier   	"Logical View::Platform::Web Application::基础操作面板::Themes.aspx::State/Activity Model::加载会员顶层面版"
+						    supplier_quidu 	"541E877A00D5"
+						    client     	"Logical View::Platform::Web Application::基础操作面板::Themes.aspx::State/Activity Model::查找用户所属会员组"
+						    client_quidu 	"541E873D0219"
+						    sendEvent  	(object sendEvent
+							quid       	"541E879F00F3")))
+					    objectflows 	(list objectflow_list)
+					    statediagrams 	(list StateDiagrams
+						(object ActivityDiagram "InitLoad"
+						    quid       	"541E872800DE"
+						    title      	"InitLoad"
+						    zoom       	100
+						    max_height 	28350
+						    max_width  	21600
+						    origin_x   	0
+						    origin_y   	0
+						    items      	(list diagram_item_list
+							(object Swimlane "" @211
+							    line_color 	3342489
+							    width      	450)
+							(object StateView "StartState" "$UNNAMED$51" @212
+							    Parent_View 	@211
+							    location   	(403, 291)
+							    font       	(object Font
+								size       	12
+								face       	"Arial"
+								bold       	FALSE
+								italics    	FALSE
+								underline  	FALSE
+								strike     	FALSE
+								color      	0
+								default_color 	TRUE)
+							    label      	(object ItemLabel
+								Parent_View 	@212
+								location   	(445, 261)
+								nlines     	2
+								max_width  	600
+								label      	"")
+							    icon_style 	"Icon"
+							    line_color 	3342489
+							    quidu      	"541E873A0250"
+							    autoResize 	TRUE)
+							(object StateView "Normal" "查找用户所属会员组" @213
+							    Parent_View 	@211
+							    location   	(1131, 290)
+							    font       	(object Font
+								size       	12
+								face       	"Arial"
+								bold       	FALSE
+								italics    	FALSE
+								underline  	FALSE
+								strike     	FALSE
+								color      	0
+								default_color 	TRUE)
+							    label      	(object ItemLabel
+								Parent_View 	@213
+								location   	(1131, 287)
+								fill_color 	13434879
+								anchor_loc 	1
+								nlines     	2
+								max_width  	516
+								justify    	0
+								label      	"查找用户所属会员组")
+							    icon_style 	"Icon"
+							    line_color 	3342489
+							    fill_color 	13434879
+							    quidu      	"541E873D0219"
+							    width      	612
+							    height     	131
+							    autoResize 	TRUE)
+							(object TransView "" @214
+							    stereotype 	TRUE
+							    line_color 	3342489
+							    quidu      	"541E8762018F"
+							    client     	@212
+							    supplier   	@213
+							    line_style 	0
+							    x_offset   	FALSE)
+							(object StateView "Normal" "加载会员顶层面版" @215
+							    Parent_View 	@211
+							    location   	(1131, 640)
+							    font       	(object Font
+								size       	12
+								face       	"Arial"
+								bold       	FALSE
+								italics    	FALSE
+								underline  	FALSE
+								strike     	FALSE
+								color      	0
+								default_color 	TRUE)
+							    label      	(object ItemLabel
+								Parent_View 	@215
+								location   	(1131, 634)
+								fill_color 	13434879
+								anchor_loc 	1
+								nlines     	2
+								max_width  	546
+								justify    	0
+								label      	"加载会员顶层面版")
+							    icon_style 	"Icon"
+							    line_color 	3342489
+							    fill_color 	13434879
+							    quidu      	"541E877A00D5"
+							    width      	643
+							    height     	137
+							    autoResize 	TRUE)
+							(object TransView "" @216
+							    stereotype 	TRUE
+							    line_color 	3342489
+							    quidu      	"541E879F00F0"
+							    client     	@213
+							    supplier   	@215
+							    line_style 	0
+							    x_offset   	FALSE)))))))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Main"
+					quid       	"541E8699030F"
+					title      	"Main"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "Logical View::Platform::Web Application::基础操作面板::Themes.aspx" @217
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(903, 547)
+						font       	(object Font
+						    size       	12
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@217
+						    location   	(902, 703)
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	652
+						    justify    	0
+						    label      	"Themes.aspx")
+						icon       	"boundary"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"541E869E0224"
+						width      	230
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)))))
 			    (object Class_Category "统计分析"
 				quid       	"53ECF9ED006C"
 				exportControl 	"Public"
@@ -4670,7 +4852,7 @@
 				origin_x   	225
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object CategoryView "Logical View::Platform::Web Application::客户注册" @211
+				    (object CategoryView "Logical View::Platform::Web Application::客户注册" @218
 					location   	(374, 209)
 					font       	(object Font
 					    size       	12
@@ -4682,7 +4864,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@211
+					    Parent_View 	@218
 					    location   	(230, 125)
 					    fill_color 	13434879
 					    nlines     	2
@@ -4695,7 +4877,7 @@
 					quidu      	"53ECF9AF01A9"
 					width      	300
 					height     	180)
-				    (object CategoryView "Logical View::Platform::Web Application::登录" @212
+				    (object CategoryView "Logical View::Platform::Web Application::登录" @219
 					location   	(1297, 544)
 					font       	(object Font
 					    size       	12
@@ -4707,7 +4889,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@212
+					    Parent_View 	@219
 					    location   	(1153, 460)
 					    fill_color 	13434879
 					    nlines     	2
@@ -4720,8 +4902,8 @@
 					quidu      	"53ECF9B70054"
 					width      	300
 					height     	180)
-				    (object CategoryView "Logical View::Platform::Web Application::基础操作面板" @213
-					location   	(2428, 1687)
+				    (object CategoryView "Logical View::Platform::Web Application::基础操作面板" @220
+					location   	(2227, 1687)
 					font       	(object Font
 					    size       	12
 					    face       	"Arial"
@@ -4732,8 +4914,8 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@213
-					    location   	(2272, 1587)
+					    Parent_View 	@220
+					    location   	(2071, 1587)
 					    fill_color 	13434879
 					    nlines     	2
 					    max_width  	312
@@ -4745,8 +4927,8 @@
 					quidu      	"53ECF9C203C7"
 					width      	325
 					height     	212)
-				    (object CategoryView "Logical View::Platform::Web Application::统计分析" @214
-					location   	(1930, 1687)
+				    (object CategoryView "Logical View::Platform::Web Application::统计分析" @221
+					location   	(1593, 1678)
 					font       	(object Font
 					    size       	12
 					    face       	"Arial"
@@ -4757,8 +4939,8 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@214
-					    location   	(1767, 1590)
+					    Parent_View 	@221
+					    location   	(1430, 1581)
 					    fill_color 	13434879
 					    nlines     	2
 					    max_width  	326
@@ -4770,7 +4952,7 @@
 					quidu      	"53ECF9ED006C"
 					width      	338
 					height     	206)
-				    (object CategoryView "Logical View::Platform::Web Application::用户注册" @215
+				    (object CategoryView "Logical View::Platform::Web Application::用户注册" @222
 					location   	(1055, 1303)
 					font       	(object Font
 					    size       	12
@@ -4782,7 +4964,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@215
+					    Parent_View 	@222
 					    location   	(911, 1219)
 					    fill_color 	13434879
 					    nlines     	2
@@ -4795,7 +4977,7 @@
 					quidu      	"54112AE902D8"
 					width      	300
 					height     	180)
-				    (object ClassView "Class" "Use Case View::Role::平台管理员" @216
+				    (object ClassView "Class" "Use Case View::Role::平台管理员" @223
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -4812,7 +4994,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@216
+					    Parent_View 	@223
 					    location   	(862, 422)
 					    anchor_loc 	1
 					    nlines     	2
@@ -4827,14 +5009,14 @@
 					width      	202
 					annotation 	8
 					autoResize 	TRUE)
-				    (object DependencyView "" @217
+				    (object DependencyView "" @224
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112B160345"
-					client     	@216
-					supplier   	@211
+					client     	@223
+					supplier   	@218
 					line_style 	0)
-				    (object ClassView "Class" "Use Case View::Role::客户管理员" @218
+				    (object ClassView "Class" "Use Case View::Role::客户管理员" @225
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -4851,7 +5033,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@218
+					    Parent_View 	@225
 					    location   	(1443, 1200)
 					    anchor_loc 	1
 					    nlines     	2
@@ -4866,21 +5048,21 @@
 					width      	202
 					annotation 	8
 					autoResize 	TRUE)
-				    (object DependencyView "" @219
+				    (object DependencyView "" @226
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112B6D0014"
-					client     	@216
-					supplier   	@212
+					client     	@223
+					supplier   	@219
 					line_style 	0)
-				    (object DependencyView "" @220
+				    (object DependencyView "" @227
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112B710265"
-					client     	@218
-					supplier   	@215
+					client     	@225
+					supplier   	@222
 					line_style 	0)
-				    (object ClassView "Class" "Use Case View::Role::A类用户" @221
+				    (object ClassView "Class" "Use Case View::Role::A类用户" @228
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -4897,7 +5079,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@221
+					    Parent_View 	@228
 					    location   	(1921, 1308)
 					    anchor_loc 	1
 					    nlines     	2
@@ -4912,7 +5094,7 @@
 					width      	202
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Role::B类用户" @222
+				    (object ClassView "Class" "Use Case View::Role::B类用户" @229
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -4929,7 +5111,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@222
+					    Parent_View 	@229
 					    location   	(2407, 1350)
 					    anchor_loc 	1
 					    nlines     	2
@@ -4944,7 +5126,7 @@
 					width      	202
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Role::平台应用客户" @223
+				    (object ClassView "Class" "Use Case View::Role::平台应用客户" @230
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -4959,7 +5141,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@223
+					    Parent_View 	@230
 					    location   	(2051, 707)
 					    anchor_loc 	1
 					    nlines     	2
@@ -4972,54 +5154,54 @@
 					quidu      	"53EBAA310353"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object InheritView "" @224
+				    (object InheritView "" @231
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"53EBAA4600C0"
-					client     	@218
-					supplier   	@223
+					client     	@225
+					supplier   	@230
 					line_style 	0)
-				    (object InheritView "" @225
+				    (object InheritView "" @232
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"53EBAA430373"
-					client     	@221
-					supplier   	@223
+					client     	@228
+					supplier   	@230
 					line_style 	0)
-				    (object InheritView "" @226
+				    (object InheritView "" @233
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"53ECE1440316"
-					client     	@222
-					supplier   	@223
+					client     	@229
+					supplier   	@230
 					line_style 	0)
-				    (object DependencyView "" @227
+				    (object DependencyView "" @234
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112B8C031D"
-					client     	@223
-					supplier   	@212
+					client     	@230
+					supplier   	@219
 					line_style 	0)
-				    (object DependencyView "" @228
+				    (object DependencyView "" @235
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112BAA0375"
-					client     	@221
-					supplier   	@214
+					client     	@228
+					supplier   	@221
 					line_style 	0)
-				    (object DependencyView "" @229
+				    (object DependencyView "" @236
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112BAD00C4"
-					client     	@222
-					supplier   	@213
+					client     	@229
+					supplier   	@220
 					line_style 	0)
-				    (object DependencyView "" @230
+				    (object DependencyView "" @237
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"54112BBC020C"
-					client     	@221
-					supplier   	@213
+					client     	@228
+					supplier   	@220
 					line_style 	0)))))
 		    (object Class_Category "Data Cource Public Interface"
 			quid       	"53ECF7DB0154"
@@ -5046,7 +5228,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object ClassView "Class" "Logical View::Platform::Data Cource Public Interface::IUser" @231
+				    (object ClassView "Class" "Logical View::Platform::Data Cource Public Interface::IUser" @238
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -5062,7 +5244,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@231
+					    Parent_View 	@238
 					    location   	(602, 639)
 					    anchor_loc 	1
 					    nlines     	1
@@ -5078,7 +5260,7 @@
 					height     	58
 					annotation 	8
 					autoResize 	TRUE)
-				    (object NoteView @232
+				    (object NoteView @239
 					location   	(606, 297)
 					font       	(object Font
 					    size       	12
@@ -5090,7 +5272,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@232
+					    Parent_View 	@239
 					    location   	(468, 237)
 					    fill_color 	13434879
 					    nlines     	2
@@ -5100,13 +5282,13 @@
 					fill_color 	13434879
 					width      	300
 					height     	132)
-				    (object AttachView "" @233
+				    (object AttachView "" @240
 					stereotype 	TRUE
 					line_color 	3342489
-					client     	@232
-					supplier   	@231
+					client     	@239
+					supplier   	@238
 					line_style 	0)
-				    (object ClassView "Class" "Logical View::Platform::Data Cource Public Interface::IDataCourse" @234
+				    (object ClassView "Class" "Logical View::Platform::Data Cource Public Interface::IDataCourse" @241
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -5122,7 +5304,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@234
+					    Parent_View 	@241
 					    location   	(622, 1194)
 					    anchor_loc 	1
 					    nlines     	1
@@ -5138,7 +5320,7 @@
 					height     	58
 					annotation 	8
 					autoResize 	TRUE)
-				    (object NoteView @235
+				    (object NoteView @242
 					location   	(619, 865)
 					font       	(object Font
 					    size       	12
@@ -5150,7 +5332,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@235
+					    Parent_View 	@242
 					    location   	(481, 805)
 					    fill_color 	13434879
 					    nlines     	2
@@ -5160,11 +5342,11 @@
 					fill_color 	13434879
 					width      	300
 					height     	132)
-				    (object AttachView "" @236
+				    (object AttachView "" @243
 					stereotype 	TRUE
 					line_color 	3342489
-					client     	@235
-					supplier   	@234
+					client     	@242
+					supplier   	@241
 					line_style 	0)))))
 		    (object Class_Category "Mobile Devices APP"
 			quid       	"53ECF81802A4"
@@ -5200,7 +5382,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object CategoryView "Logical View::Platform::Mobile Devices APP::登录注册面板" @237
+				    (object CategoryView "Logical View::Platform::Mobile Devices APP::登录注册面板" @244
 					location   	(622, 622)
 					font       	(object Font
 					    size       	12
@@ -5212,7 +5394,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@237
+					    Parent_View 	@244
 					    location   	(406, 537)
 					    fill_color 	13434879
 					    nlines     	2
@@ -5225,7 +5407,7 @@
 					quidu      	"53ECFA69014C"
 					width      	444
 					height     	182)
-				    (object CategoryView "Logical View::Platform::Mobile Devices APP::查看板块目录面板" @238
+				    (object CategoryView "Logical View::Platform::Mobile Devices APP::查看板块目录面板" @245
 					location   	(621, 962)
 					font       	(object Font
 					    size       	12
@@ -5237,7 +5419,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@238
+					    Parent_View 	@245
 					    location   	(415, 878)
 					    fill_color 	13434879
 					    nlines     	2
@@ -5250,7 +5432,7 @@
 					quidu      	"53ECFA8002D9"
 					width      	425
 					height     	181)
-				    (object CategoryView "Logical View::Platform::Mobile Devices APP::查看最新话题面板" @239
+				    (object CategoryView "Logical View::Platform::Mobile Devices APP::查看最新话题面板" @246
 					location   	(628, 1362)
 					font       	(object Font
 					    size       	12
@@ -5262,7 +5444,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@239
+					    Parent_View 	@246
 					    location   	(419, 1275)
 					    fill_color 	13434879
 					    nlines     	2
@@ -5304,7 +5486,7 @@
 			origin_x   	0
 			origin_y   	656
 			items      	(list diagram_item_list
-			    (object CategoryView "Logical View::Platform::DataBase" @240
+			    (object CategoryView "Logical View::Platform::DataBase" @247
 				location   	(1938, 197)
 				font       	(object Font
 				    size       	12
@@ -5316,7 +5498,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@240
+				    Parent_View 	@247
 				    location   	(1794, 113)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5329,7 +5511,7 @@
 				quidu      	"53ECF55101B5"
 				width      	300
 				height     	180)
-			    (object CategoryView "Logical View::Platform::BasePlatformApplicationEngine" @241
+			    (object CategoryView "Logical View::Platform::BasePlatformApplicationEngine" @248
 				location   	(1937, 625)
 				font       	(object Font
 				    size       	12
@@ -5341,7 +5523,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@241
+				    Parent_View 	@248
 				    location   	(1540, 540)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5354,14 +5536,14 @@
 				quidu      	"53ECF562011A"
 				width      	807
 				height     	182)
-			    (object ImportView "" @242
+			    (object ImportView "" @249
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF57B00D8"
-				client     	@241
-				supplier   	@240
+				client     	@248
+				supplier   	@247
 				line_style 	0)
-			    (object CategoryView "Logical View::Platform::Portal View" @243
+			    (object CategoryView "Logical View::Platform::Portal View" @250
 				location   	(566, 1446)
 				font       	(object Font
 				    size       	12
@@ -5373,7 +5555,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@243
+				    Parent_View 	@250
 				    location   	(422, 1362)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5386,7 +5568,7 @@
 				quidu      	"53ECF58000F1"
 				width      	300
 				height     	180)
-			    (object CategoryView "Logical View::Platform::InnerManagement" @244
+			    (object CategoryView "Logical View::Platform::InnerManagement" @251
 				location   	(725, 225)
 				font       	(object Font
 				    size       	12
@@ -5398,7 +5580,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@244
+				    Parent_View 	@251
 				    location   	(353, 141)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5411,7 +5593,7 @@
 				quidu      	"53ECF6130102"
 				width      	757
 				height     	181)
-			    (object CategoryView "Logical View::Platform::Data Course Management" @245
+			    (object CategoryView "Logical View::Platform::Data Course Management" @252
 				location   	(1937, 1034)
 				font       	(object Font
 				    size       	12
@@ -5423,7 +5605,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@245
+				    Parent_View 	@252
 				    location   	(1531, 937)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5436,14 +5618,14 @@
 				quidu      	"53ECF6720172"
 				width      	825
 				height     	206)
-			    (object ImportView "" @246
+			    (object ImportView "" @253
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF693007E"
-				client     	@245
-				supplier   	@241
+				client     	@252
+				supplier   	@248
 				line_style 	0)
-			    (object CategoryView "Logical View::Platform::Web Application" @247
+			    (object CategoryView "Logical View::Platform::Web Application" @254
 				location   	(1300, 1453)
 				font       	(object Font
 				    size       	12
@@ -5455,7 +5637,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@247
+				    Parent_View 	@254
 				    location   	(1103, 1369)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5468,21 +5650,21 @@
 				quidu      	"53ECF70501A0"
 				width      	407
 				height     	181)
-			    (object ImportView "" @248
+			    (object ImportView "" @255
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF6EA028A"
-				client     	@243
-				supplier   	@247
+				client     	@250
+				supplier   	@254
 				line_style 	0)
-			    (object ImportView "" @249
+			    (object ImportView "" @256
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF7D9004C"
-				client     	@247
-				supplier   	@245
+				client     	@254
+				supplier   	@252
 				line_style 	0)
-			    (object CategoryView "Logical View::Platform::Data Cource Public Interface" @250
+			    (object CategoryView "Logical View::Platform::Data Cource Public Interface" @257
 				location   	(2258, 1456)
 				font       	(object Font
 				    size       	12
@@ -5494,7 +5676,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@250
+				    Parent_View 	@257
 				    location   	(1899, 1372)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5507,14 +5689,14 @@
 				quidu      	"53ECF7DB0154"
 				width      	731
 				height     	181)
-			    (object ImportView "" @251
+			    (object ImportView "" @258
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF8080392"
-				client     	@250
-				supplier   	@245
+				client     	@257
+				supplier   	@252
 				line_style 	0)
-			    (object CategoryView "Logical View::Platform::Mobile Devices APP" @252
+			    (object CategoryView "Logical View::Platform::Mobile Devices APP" @259
 				location   	(1652, 1938)
 				font       	(object Font
 				    size       	12
@@ -5526,7 +5708,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@252
+				    Parent_View 	@259
 				    location   	(1387, 1854)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5539,14 +5721,14 @@
 				quidu      	"53ECF81802A4"
 				width      	543
 				height     	181)
-			    (object ImportView "" @253
+			    (object ImportView "" @260
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF8520020"
-				client     	@252
-				supplier   	@250
+				client     	@259
+				supplier   	@257
 				line_style 	0)
-			    (object CategoryView "Logical View::Platform::Analysis Tools Application" @254
+			    (object CategoryView "Logical View::Platform::Analysis Tools Application" @261
 				location   	(2674, 1937)
 				font       	(object Font
 				    size       	12
@@ -5558,7 +5740,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@254
+				    Parent_View 	@261
 				    location   	(2330, 1850)
 				    fill_color 	13434879
 				    nlines     	2
@@ -5571,12 +5753,12 @@
 				quidu      	"53ECF8540283"
 				width      	700
 				height     	187)
-			    (object ImportView "" @255
+			    (object ImportView "" @262
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"53ECF89B0309"
-				client     	@254
-				supplier   	@250
+				client     	@261
+				supplier   	@257
 				line_style 	0))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
@@ -5588,7 +5770,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::Platform" @256
+		    (object CategoryView "Logical View::Platform" @263
 			location   	(1247, 662)
 			font       	(object Font
 			    size       	12
@@ -5600,7 +5782,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@256
+			    Parent_View 	@263
 			    location   	(1103, 578)
 			    fill_color 	13434879
 			    nlines     	2
